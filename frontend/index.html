@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>REMEDIOS.NET — Personal Homepage</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-mark"></span><span>REMEDIOS.NET</span><span class="live-dot"></span></div>
+
+</header>
+
+<main class="shell">
+  <section class="screen active" data-screen="home">
+    <div class="hero">
+      <div class="stream pixel-border">
+        <div class="window-title">
+          <span>▶ LIVE / HOME.EXE</span>
+          <span class="dots"><i></i><i></i><i></i></span>
+        </div>
+
+<div class="hero-art">
+  <div class="hero-carousel" aria-hidden="true">
+    <div class="hero-track">
+      <div class="hero-slide"></div>
+      <div class="hero-slide"></div>
+      <div class="hero-slide"></div>
+    </div>
+  </div>
+  <div class="danmaku-layer" aria-label="好友评论弹幕"></div>
+</div>
+
+        <div class="stream-meta">
+          <h1>INTERNET REMEDIOS ONLINE</h1>
+          <p>这里是我的网络房间。记录学习、项目、碎片想法，以及偶尔掉线的人类生活。</p>
+        </div>
+      </div>
+
+
+
+<div class="side-stack">
+  <aside class="terminal-card pixel-border compact-terminal">
+    <div class="terminal-head">
+      <span>■ REMEDIOS_CLI</span>
+      <span class="terminal-led">ONLINE</span>
+    </div>
+
+    <div class="terminal-screen" id="terminalScreen">
+      <div class="term-line dim">RemediosOS v0.7</div>
+      <div class="term-line dim">type <b>help</b> to list commands</div>
+      <div class="term-line"><span class="prompt">guest@remedios:~$</span> <span>status</span></div>
+      <div class="term-output">homepage: online<br>signal: stable</div>
+    </div>
+
+    <form class="terminal-input-row" id="terminalForm">
+      <span class="prompt">guest@remedios:~$</span>
+      <input id="terminalInput" autocomplete="off" spellcheck="false" placeholder="help">
+    </form>
+  </aside>
+
+  <aside class="status-mini pixel-border">
+    <div class="status-mini-head">■ STATUS FLOW</div>
+    <div class="status-mini-window">
+      <div class="status-mini-track" id="statusTrack">
+        <div><b>STATUS</b><span>connecting...</span></div>
+      </div>
+    </div>
+  </aside>
+</div>
+
+
+
+    </div>
+
+    <section class="music-bar pixel-border" id="musicPlayer">
+      <button class="kirby-control" id="kirbyControl" type="button"
+              aria-label="点击星之卡比播放或暂停音乐"
+              title="点击卡比：播放 / 暂停">
+        <img src="assets/images/kirby.png" alt="像素风星之卡比">
+        <span class="kirby-state" id="kirbyState">PLAY</span>
+      </button>
+
+      <div class="music-info">
+        <div class="music-topline">
+          <span class="music-label">♪ REMEDIOS RADIO</span>
+          <span class="music-time" id="musicTime">00:00 / 00:00</span>
+        </div>
+        <div class="music-title">pixel room loop — click Kirby to play / pause</div>
+        <div class="music-progress">
+          <div class="music-progress-fill" id="musicProgressFill"></div>
+        </div>
+      </div>
+
+      <div class="music-bars" id="musicBars" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+
+      <audio id="bgMusic" loop preload="auto" src="assets/music/pixel-room-loop.wav"></audio>
+    </section>
+
+    <h2 class="section-title">NEW POSTS / 最新记录</h2>
+    <div class="posts" id="recentPosts">
+      <div class="dynamic-state">LOADING...</div>
+    </div>
+  </section>
+
+  <section class="screen" data-screen="archive">
+
+    <div class="page-cli">
+      <span class="page-prompt">guest@remedios:~$</span>
+      <span class="page-path">open archive</span>
+      <button type="button" data-route-cli="home">home</button>
+      </div>
+    <h1 class="section-title">ARCHIVE / 归档</h1>
+    <div class="archive-head">
+      <input class="search" id="archiveSearch" placeholder="搜索标题 / 标签…" />
+      <button class="chip active" data-filter="all">全部</button>
+      <button class="chip" data-filter="项目">项目</button>
+      <button class="chip" data-filter="学习">学习</button>
+      <button class="chip" data-filter="生活">生活</button>
+    </div>
+    <div class="timeline" id="timeline">
+      <div class="t-item"><small>LOADING...</small></div>
+    </div>
+  </section>
+
+  <section class="screen" data-screen="about">
+
+    <div class="page-cli">
+      <span class="page-prompt">guest@remedios:~$</span>
+      <span class="page-path">open about</span>
+      <button type="button" data-route-cli="home">home</button>
+      </div>
+    <h1 class="section-title">ABOUT / 关于</h1>
+    <div class="about-grid">
+      <aside class="profile pixel-border">
+        <div class="avatar"></div>
+        <h2>开开.exe</h2>
+        <div style="color:var(--muted)">human / online / sometimes afk</div>
+        <div class="stat-row">
+          <div class="stat"><b>04</b>栏目</div>
+          <div class="stat"><b>∞</b>想法</div>
+          <div class="stat"><b>1UP</b>状态</div>
+        </div>
+      </aside>
+      <div class="about-copy pixel-border">
+        <h3>PLAYER PROFILE</h3>
+        <p>
+          这里不是传统简历页，而是一个持续更新的网络人格空间。首页负责“现在”，归档负责“过去”，关于负责“我是谁”，友链负责“我与谁连接”。
+        </p>
+        <p>
+          视觉上采用梦幻糖果色 + 8-bit 窗口系统：低饱和粉紫作为背景，亮粉与电蓝负责交互反馈，窗口边框、像素阴影与扫描线负责建立“旧互联网 + 游戏 UI”的质感。
+        </p>
+        <div class="skillbars">
+          <div class="barline"><span>PROJECT</span><div class="bar"><i style="width:88%"></i></div><span>88</span></div>
+          <div class="barline"><span>AI / TECH</span><div class="bar"><i style="width:82%"></i></div><span>82</span></div>
+          <div class="barline"><span>GAME</span><div class="bar"><i style="width:91%"></i></div><span>91</span></div>
+          <div class="barline"><span>ENERGY</span><div class="bar"><i style="width:67%"></i></div><span>67</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screen" data-screen="links">
+
+    <div class="page-cli">
+      <span class="page-prompt">guest@remedios:~$</span>
+      <span class="page-path">open links</span>
+      <button type="button" data-route-cli="home">home</button>
+      </div>
+    <h1 class="section-title">LINKS / 友链</h1>
+    <div class="links-grid" id="linksGrid">
+      <div class="dynamic-state">LOADING...</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 REMEDIOS.NET · personal space online</span>
+    <span class="pixel-meter" aria-hidden="true">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </span>
+  </footer>
+</main>
+
+<div class="toast" id="toast">ROUTE UPDATED</div>
+
+<script src="js/api.js"></script>
+<script src="js/terminal.js"></script>
+<script src="js/status.js"></script>
+<script src="js/music.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.wrangler/
+.dev.vars
+.env
+node_modules/
+coverage/
+*.sqlite
+*.sqlite3
+.DS_Store
+frontend/assets/music/*.wav
