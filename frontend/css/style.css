@@ -416,17 +416,17 @@ button,a,input { font:inherit; }
 .hero-slide:nth-child(1) {
   background-image:
     linear-gradient(180deg,rgba(255,245,252,.06),rgba(255,245,252,.18)),
-    url("../assets/images/avatar.jpg");
+    url("../assets/images/hero-slide-1.jpg");
 }
 .hero-slide:nth-child(2) {
   background-image:
     linear-gradient(180deg,rgba(255,245,252,.06),rgba(255,245,252,.18)),
-    url("../assets/images/hero-slide-1.jpg");
+    url("../assets/images/hero-slide-2.jpg");
 }
 .hero-slide:nth-child(3) {
   background-image:
     linear-gradient(180deg,rgba(255,245,252,.06),rgba(255,245,252,.18)),
-    url("../assets/images/hero-slide-2.jpg");
+    url("../assets/images/hero-slide-3.jpg");
 }
 @keyframes heroLoop {
   0%   { transform:translateX(0); }
