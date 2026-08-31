@@ -401,13 +401,13 @@ button,a,input { font:inherit; }
 }
 .hero-track {
   display:flex;
-  width:300%;
+  width:400%;
   height:100%;
   animation:heroLoop 18s linear infinite;
 }
 .hero-slide {
-  width:33.333333%;
-  flex:0 0 33.333333%;
+  width:25%;
+  flex:0 0 25%;
   height:100%;
   background-size:cover;
   background-position:center;
@@ -428,14 +428,20 @@ button,a,input { font:inherit; }
     linear-gradient(180deg,rgba(255,245,252,.06),rgba(255,245,252,.18)),
     url("../assets/images/hero-slide-3.jpg");
 }
+.hero-slide:nth-child(4) {
+  background-image:
+    linear-gradient(180deg,rgba(255,245,252,.06),rgba(255,245,252,.18)),
+    url("../assets/images/hero-slide-1.jpg");
+}
 @keyframes heroLoop {
   0%   { transform:translateX(0); }
-  28%  { transform:translateX(0); }
-  33%  { transform:translateX(-33.333333%); }
-  61%  { transform:translateX(-33.333333%); }
-  66%  { transform:translateX(-66.666666%); }
-  94%  { transform:translateX(-66.666666%); }
-  100% { transform:translateX(0); }
+  22%  { transform:translateX(0); }
+  25%  { transform:translateX(-25%); }
+  47%  { transform:translateX(-25%); }
+  50%  { transform:translateX(-50%); }
+  72%  { transform:translateX(-50%); }
+  75%  { transform:translateX(-75%); }
+  100% { transform:translateX(-75%); }
 }
 .stream:hover .hero-track { animation-play-state:paused; }
 
